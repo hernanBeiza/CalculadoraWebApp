@@ -48,14 +48,12 @@ function App(props) {
       */
       break;
       case "-":
-      /*
       if(!primerIngreso){
         resultado -=parseInt(resultadoString);
       } else {
         resultado = parseInt(resultadoString);
       }
       resultadoString = "0";
-      */
       break;
     }
     primerIngreso = false;
