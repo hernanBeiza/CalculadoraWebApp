@@ -48,6 +48,7 @@ function Boton({label,funcion}) {
 	const obtenerEstado = () => {
 		switch(label){
 			case "/":
+				return false;
 			case "%":	
 			case "X":	
 			case "+/-":	
@@ -73,6 +74,7 @@ function Boton({label,funcion}) {
 
 			case "X":
 			case "/":
+				funcion("/");
 			case "+/-":
 			case "%":
 				console.log("Sin implementar aún");

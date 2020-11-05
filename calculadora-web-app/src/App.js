@@ -57,6 +57,15 @@ function App(props) {
       resultadoString = "0";
       */
       break;
+      case "/":
+      if(!primerIngreso){
+        resultado /=parseInt(resultadoString);
+      } else {
+        resultado = parseInt(resultadoString);
+      }
+      resultadoString = "0";
+      break;
+
     }
     primerIngreso = false;
   }
@@ -107,7 +116,7 @@ function App(props) {
             {/*
             <Button variant="primary" block disabled><FontAwesomeIcon icon={faDivide}/></Button>
             */}
-            <Boton label="/"/>
+            <Boton funcion={ operar }label="/"/>
           </Col>
         </Row>
         <Row>
