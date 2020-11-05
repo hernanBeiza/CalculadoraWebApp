@@ -42,10 +42,8 @@ function App(props) {
     setOperacionString(operacion);
     switch(operacion){
       case "+":
-      /*
         resultado +=parseInt(resultadoString);
         resultadoString = "0";
-      */
       break;
       case "-":
       /*
