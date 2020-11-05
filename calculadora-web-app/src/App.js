@@ -57,6 +57,14 @@ function App(props) {
       resultadoString = "0";
       */
       break;
+      case "X":
+      if(!primerIngreso){
+        resultado *=parseInt(resultadoString);
+      } else {
+        resultado = parseInt(resultadoString);
+      }
+      resultadoString = "0";
+      break;
     }
     primerIngreso = false;
   }
@@ -133,7 +141,7 @@ function App(props) {
             {/*
             <Button variant="primary" block disabled><FontAwesomeIcon icon={faTimes}/></Button>
             */}
-            <Boton label="X"/>
+            <Boton label="X" funcion={ operar }/>
             </Col>
         </Row>
         <Row>
