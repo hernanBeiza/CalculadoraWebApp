@@ -50,6 +50,7 @@ function Boton({label,funcion}) {
 			case "/":
 			case "%":	
 			case "X":	
+				return false;
 			case "+/-":	
 				return true;
 			default:
@@ -72,6 +73,9 @@ function Boton({label,funcion}) {
 			break;
 
 			case "X":
+				funcion("X");
+			break;
+
 			case "/":
 			case "+/-":
 			case "%":
