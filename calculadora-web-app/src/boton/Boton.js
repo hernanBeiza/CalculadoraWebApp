@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 import './Boton.css';
 
@@ -100,6 +101,12 @@ function Boton({label,funcion}) {
   return (
 		<Button variant={ obtenerVariante() } disabled={obtenerEstado()} block onClick={ () => presionar() }>{obtenerLeyenda()}</Button>
   );
+}
+
+
+Boton.propTypes = {
+  label: PropTypes.string,
+  funcion: PropTypes.func
 }
 
 export default Boton;
